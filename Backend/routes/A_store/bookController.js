@@ -348,7 +348,6 @@ async function getAllPromotionExistToDay() {
         {
             if(Date.parse(End) >= Date.parse(nowCheckDate))
             {
-                return true
             }
         }
         return false

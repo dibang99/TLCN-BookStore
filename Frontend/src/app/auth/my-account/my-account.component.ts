@@ -30,7 +30,7 @@ export class MyAccountComponent implements OnInit {
   public user: any = SocialUser;
   errStringLogin: String = ""
   errRegister: String = ""
-  statusRegister: Boolean = true
+  statusRegister: Boolean = false
   showErrorMessage: Boolean = false;
   errorStr: String = ""
   statusLogin: Boolean = false

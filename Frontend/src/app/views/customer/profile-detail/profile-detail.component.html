@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
-<body class="archive tax-product_cat term-personal-finance term-13 woocommerce woocommerce-page wpb-js-composer 
+<body class="archive tax-product_cat term-personal-finance term-13 woocommerce woocommerce-page wpb-js-composer
 js-comp-ver-4.9.2 vc_responsive ">
     <div class="wrapper">
         <!-- //MAIN NAVIGATION -->
@@ -20,7 +20,7 @@ js-comp-ver-4.9.2 vc_responsive ">
                                 <img src="{{userService.selectedUser?.imageUrl}}" alt="">
                             </div>
                             <div class="profile-stats">
-                                <button style="margin:15px ;" class="buttona" (click)="moveToProfileEdit(userService.selectedUser._id);">Sửa Đổi Thông Tin</button>
+                                <button style="margin:15px ;" class="button" (click)="moveToProfileEdit(userService.selectedUser._id);">Sửa Đổi Thông Tin</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ js-comp-ver-4.9.2 vc_responsive ">
                                             <button class="buttona" type="button" (click)="cancel();" style="color: black;"> Quay Lại</button>
                                         </div>
                                         <div class="col-sm-5">
-                                            <button class="buttona" type="button" (click)="moveToProfileChangePassword(userService.selectedUser._id);" style="color: black;"> Đổi Mật Khẩu</button>
+                                            <button class="buttona" type="submit" style="color: black;" (click)="moveToProfileChangePassword(userService.selectedUser._id);" > Đổi Mật Khẩu</button>
                                         </div>
                                     </div>
                                 </div>
@@ -85,13 +85,13 @@ js-comp-ver-4.9.2 vc_responsive ">
                         height: 80px;
                         font-size: 14px;
                     }
-                    
+
                     #price-slider input {
                         width: 90px;
                         display: inline-block;
                         font-size: 12px;
                     }
-                    
+
                     #slider-range {
                         position: relative;
                         margin: auto;
@@ -99,7 +99,7 @@ js-comp-ver-4.9.2 vc_responsive ">
                         height: 13px;
                         border: solid 1px black;
                     }
-                    
+
                     #slider-range .ui-slider-handle {
                         position: absolute;
                         width: 15px;
@@ -108,11 +108,11 @@ js-comp-ver-4.9.2 vc_responsive ">
                         border: solid 1px black;
                         cursor: pointer;
                     }
-                    
+
                     #slider-range .ui-slider-range {
                         background: blue;
                     }
-                    
+
                     #slider-range .ui-corner-all {
                         border-radius: 0px;
                     }

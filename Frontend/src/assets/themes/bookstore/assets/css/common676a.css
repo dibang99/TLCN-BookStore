@@ -1122,7 +1122,7 @@ fieldset[disabled] .btn-inverse.active {
 
 .btn-link {
     display: inline-block;
-    color: #27ae61;
+    color: #008080;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -2237,7 +2237,7 @@ ul.bks_icon_list .list_content {
 
 
 /*===============================
-owl.carousel 
+owl.carousel
 ================================================================================*/
 
 .owl-carousel .owl-wrapper:after {

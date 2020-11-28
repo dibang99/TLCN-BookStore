@@ -45,7 +45,7 @@ export class ProfileDetailComponent implements OnInit {
   {
     return this._router.navigate(["/changePassword" + `/${userId}`]);
   }
-  
+
   moveToProfileDetail(){
     this._router.navigate(['/accountProfile'])
   }

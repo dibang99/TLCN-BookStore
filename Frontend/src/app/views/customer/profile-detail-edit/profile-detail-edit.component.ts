@@ -71,6 +71,7 @@ export class ProfileDetailEditComponent implements OnInit {
     cancel(){
       this.location.back();
     }
+    
     moveToProfileDetail(){
       this._router.navigate(['/accountProfile'])
     }

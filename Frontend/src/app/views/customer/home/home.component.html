@@ -34,7 +34,7 @@
     }
 
     .btn-link:after {
-        background: #229955 !important;
+        background: #008080 !important;
     }
 
     h1,
@@ -110,7 +110,7 @@
 
     .main-menu,
     .main-menu .vc-mm-menu-h>ul.vc-nav-on-desktop>li>a {
-        background: #27ae61;
+        background:#008080;
         color: #ffffff;
         font-family: Roboto Slab;
         font-size: 13px;
@@ -127,12 +127,12 @@
     }
 
     .main-menu .vc-nav-on-desktop>li:hover>a.nav-link {
-        background: #229955;
+        background: #008080;
     }
 
     .main-menu .vc-nav-on-desktop>li.current-menu-item>a.nav-link,
     .main-menu vc-nav-on-desktop>li.current_page_item>a.nav-link {
-        background: #229955;
+        background: #008080;
     }
 
     .main-menu .vc-mm-mega-cont,
@@ -152,7 +152,7 @@
     .main-menu ul.sub-menu-inner li a:hover,
     .main-menu .vc-mm-mega-cont li a:hover,
     .main-menu .vc-mm-mega-cont-inner li.current-menu-parent a {
-        color: #27ae61 !important;
+        color: #008080 !important;
     }
 
     .main-menu .vc-mm-mega-cont ul li {
@@ -310,7 +310,7 @@
     @media only screen and (max-width:768px) {
         .vc-mm-menu-h .vc-nav-on-desktop>li:hover>a,
         .vc-mm-menu-v .vc-nav-on-desktop>li:hover>a {
-            background-color: #229955 !important;
+            background-color: #008080 !important;
             color: #ffffff !important;
         }
         .vc-mm-menu-h .vc-nav-on-desktop .vc-d-0>.nav-link,
@@ -417,7 +417,7 @@
         padding-right: 30px !important;
         padding-bottom: 30px !important;
         padding-left: 30px !important;
-        background-color: #27ae61 !important;
+        background-color: #008080 !important;
     }
 
     .vc_custom_1454686431101 {
@@ -1225,8 +1225,8 @@
                                                                 <div id="OverFlowNameBooktop3">
                                                                     <h2 class='product_title'><a class='bks_product_title_link'>{{item.nameBook}}</a></h2>
                                                                 </div>
-                                                                <del><span class="woocommerce-Price-amount amount">{{item.priceBook*(100-item.sale)/100| currency:"VND"}}</span></del>
-                                                                <ins><span class="woocommerce-Price-amount amount">{{item.priceBook| currency:"VND"}}</span></ins>
+                                                                <ins><span class="woocommerce-Price-amount amount">{{item.priceBook*(100-item.sale)/100| currency:"VND"}}</span></ins>
+                                                                <del><span class="woocommerce-Price-amount amount">{{item.priceBook| currency:"VND"}}</span></del>
                                                             </div>
                                                             <div class='product-content' *ngIf="item.sale == 0">
                                                                 <div id="OverFlowNameBooktop3">
