@@ -135,7 +135,8 @@ export class MyAccountComponent implements OnInit {
             data => {
               console.log(data)
               this.errRegister = ""
-              if(data == "Email has been sent--Please confirm"){
+              localStorage.setItem("token", data["token"]);
+              if(data["message"] == "Email has been sent--Please confirm"){
                 this.statusRegister = true;
                   setTimeout(() => {  this.statusRegister = false; }, 3000);
                   this.registerForm.reset();

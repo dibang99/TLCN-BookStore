@@ -18,7 +18,7 @@ export class ProfileDetailEditComponent implements OnInit {
   ngOnInit() {
     $('.searchHeader').attr('style', 'font-size: 1.6rem !important');
     let id = this.route.snapshot.paramMap.get('id');
-    if (this.statusLogin == null) { this._router.navigate(['/account']); }
+    if (this.statusLogin != null) { this._router.navigate(['/account']); }
     this.loginBy = localStorage.getItem('loginBy');
     this.getUserById(id);
   }
@@ -71,7 +71,7 @@ export class ProfileDetailEditComponent implements OnInit {
     cancel(){
       this.location.back();
     }
-    
+
     moveToProfileDetail(){
       this._router.navigate(['/accountProfile'])
     }

@@ -26,7 +26,7 @@ export class ProfileChangePasswordComponent implements OnInit {
   ngOnInit() {
     $('.searchHeader').attr('style', 'font-size: 1.6rem !important');
     let id = this.route.snapshot.paramMap.get('id');
-    if (this.statusLogin == null) { this._router.navigate(['/account']); }
+    if (this.statusLogin != null) { this._router.navigate(['/account']); }
     this.loginBy = localStorage.getItem('loginBy');
     this.getUserById(id);
   }
@@ -66,7 +66,7 @@ export class ProfileChangePasswordComponent implements OnInit {
           return;
         }
         else {
-          console.log(JSON.stringify(this.changPasswordForm.value)); 
+          console.log(JSON.stringify(this.changPasswordForm.value));
           this.changPasswordForm.value.email = this.userService.selectedUser.email;
           this.userService.changePassword(this.changPasswordForm.value)
             .subscribe(
@@ -85,7 +85,7 @@ export class ProfileChangePasswordComponent implements OnInit {
                     this.changPasswordForm.controls.currentPassword.reset();
                     this.changPasswordForm.controls.rePassword.reset();
                 }
-               
+
               },
               error => {
                 console.log(error);

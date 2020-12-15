@@ -216,7 +216,7 @@ export class HomeComponent implements OnInit {
 					items: 4
 				},
 				1100: {
-					items: 6
+					items: 4
 				}
 			}
 		}

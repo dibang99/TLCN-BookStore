@@ -73,7 +73,8 @@ router.post('/signup', function(req, res) {
                             } else {
                                 console.log('Message sent: %s', info.messageId);
                                 console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-                                res.json('Email has been sent--Please confirm');
+                                res.json({"token":token,
+                                "message": 'Email has been sent--Please confirm'});
                             }
                         });
                     }
